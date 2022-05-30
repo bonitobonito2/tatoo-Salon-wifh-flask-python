@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% if success !='false' %}
+<div class="alert alert-success" role="alert">
+   item added in database
+  </div>
+{% endif %}
+<form method="post" action="/" class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">inventar name</label>
+      <input type="text"  name="inventarName" class="form-control" id="inventarName">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">coast</label>
+      <input type="number" name="inventarCoast" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">condition</label>
+        <input type="text" name="inventarCondition" class="form-control" id="inventarName">
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit"  class="btn btn-primary">add item</button>
+    </div>
+  </form>
+{% endblock%}
