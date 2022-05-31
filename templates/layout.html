@@ -19,8 +19,8 @@
             <li class="nav-item">
               <a class="nav-link {{active1}}" href="/inventars">inventars</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link {{active2}}">change inventar values</a>
+            <li  id="a" class="nav-item">
+              <a class="nav-link {{active2}} ">update inventar values</a>
             </li>
           </ul>
         </div>
@@ -28,7 +28,15 @@
           {% block content %}
           {% endblock %}
         </div>
+       
       </div>
 </body>
+<script>
+  let a = document.getElementById('a')
+  console.log('d')
+  a.addEventListener('click',()=>{
+    alert('to update item, at first go to inventars and choose which item u want to update')
+  })
+  </script>
 
 </html>
