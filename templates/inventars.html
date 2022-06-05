@@ -25,7 +25,7 @@
       <tr>
         <th scope="col">ID</th>
         <th scope="col">inventar name</th>
-        <th scope="col">inventar coast</th>
+        <th scope="col">inventar cost</th>
         <th scope="col">condition</th>
         <th scope="col" >delete item</th>
         <th scope="col" >update item</th>
@@ -36,7 +36,7 @@
       <tr>
         <th scope="row">{{row['id']}}</th>
         <td>{{row['inventar_name']}}</td>
-        <td>{{row['inventar_coast']}}</td>
+        <td>{{row['inventar_coast']}}lari</td>
         <td>{{row['condition']}}</td>
       <form action="/inventars" method="post" >  <td> <button type="submit" name = '{{row["id"]}}' class="btn btn-danger">delete</button></td></form> 
       <form action="/update:{{row.id}}" method="get" >  <td> <button type="submit"  class="btn btn-success">update</button></td></form>
